@@ -1,7 +1,12 @@
 import React from 'react';
-import { View, AmbientLight, Model, asset } from 'react-360';
+import { View, AmbientLight, Model, asset, VrButton, StyleSheet, AppRegistry } from 'react-360';
 
 export default class Cinemoche extends React.Component {
+  changeScene = () => {
+    console.log(this.props)
+    this.props.onClick("Mars");
+  }
+
   render() {
     return (
       <View>
@@ -22,7 +27,23 @@ export default class Cinemoche extends React.Component {
             ]
           }}
         />
+        <VrButton style={styles.button} onClick={this.changeScene}/>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  button: {
+    transform: [ { translate: [-70, 70, 1] } ],
+    width: 1000,
+    height: 350,
+    backgroundColor: "#ec0ed5",
+    opacity: 0.2
+  },
+  buttonHover: {
+    backgroundColor: "#a70d95"
+  }
+});
+
+AppRegistry.registerComponent('Cinemoche', () => Cinemoche);
