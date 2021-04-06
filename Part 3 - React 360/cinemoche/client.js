@@ -7,6 +7,7 @@ function init(bundle, parent, options = {}) {
   });
 
   r360._cameraPosition = [5, 10, 35];
+  //r360._cameraQuat = [10 , 0, 0];
 
   // Render your app content to the default cylinder surface
   r360.renderToSurface(r360.createRoot('cinemoche', { }), r360.getDefaultSurface());
