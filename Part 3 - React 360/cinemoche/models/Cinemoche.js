@@ -13,6 +13,7 @@ export default class Cinemoche extends React.Component {
           }}
           style={{
             transform: [
+              { translate: [0, 0, 0] },
               { rotateX: 0 },
               { rotateY: 90 },
               { scaleX: 5 },
