@@ -17,7 +17,7 @@ function init(bundle, parent, options = {}) {
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('test(1).png'));
   const location = new Location([0, -50, -100]);
   r360.renderToLocation(r360.createRoot('cine', { }), location);
 }

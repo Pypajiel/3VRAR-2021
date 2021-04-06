@@ -11,7 +11,7 @@ import {
 export default class projet1 extends React.Component {
   render() {
     return (
-      <View style={styles.panel}>
+      <View>
 
       </View>
     );
