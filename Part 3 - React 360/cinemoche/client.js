@@ -6,6 +6,8 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
+  r360._cameraPosition = [5, 10, 35];
+
   // Render your app content to the default cylinder surface
   r360.renderToSurface(r360.createRoot('cinemoche', { }), r360.getDefaultSurface());
 
@@ -13,7 +15,7 @@ function init(bundle, parent, options = {}) {
   r360.compositor.setBackground(r360.getAssetURL('360_world.jpg')).catch(console.error);
 
   // Render the cinemoche
-  const location = new Location([0, -50, -100]);
+  const location = new Location([0, 0, 0]);
   r360.renderToLocation(r360.createRoot('cinemocheModel', { }), location);
 }
 

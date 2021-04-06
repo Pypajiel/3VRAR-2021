@@ -12,12 +12,12 @@ export default class Cinemoche extends React.Component {
             mtl: asset('./cinemoche/cinemoche.mtl')
           }}
           style={{
-            transform:[
+            transform: [
               { rotateX: 0 },
               { rotateY: 90 },
-              { scaleX: 10 },
-              { scaleY: 10 },
-              { scaleZ: 10 },
+              { scaleX: 5 },
+              { scaleY: 5 },
+              { scaleZ: 5 },
             ]
           }}
         />
